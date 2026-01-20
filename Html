@@ -1,0 +1,308 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+
+\usepackage[spanish, es-nodecimaldot, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{spanish}
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default/Latin font to Sans Serif in the main (rm) slot for a modern look
+\babelfont{rm}{Noto Sans}
+
+% Add because main language is not English
+\usepackage{enumitem}
+\setlist[itemize]{label=$\bullet$, leftmargin=*}
+
+% --- DESIGN PACKAGES ---
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% --- CUSTOM COLORS & STYLE ---
+\definecolor{primary}{RGB}{186, 85, 211}   % Medium Orchid
+\definecolor{secondary}{RGB}{75, 0, 130}   % Indigo
+\definecolor{accent}{RGB}{255, 105, 180}   % Hot Pink
+\definecolor{lightbg}{RGB}{245, 240, 255}  % Very light purple
+
+% Box style for Pro Tips
+\newtcolorbox{protip}{
+  colback=lightbg,
+  colframe=primary,
+  coltitle=white,
+  title=\textbf{TIP PRO \faStar},
+  boxrule=1pt,
+  arc=4pt
+}
+
+% Box style for Mistakes to Avoid
+\newtcolorbox{warningbox}{
+  colback=white,
+  colframe=red!75!black,
+  coltitle=white,
+  title=\textbf{ERROR COMÚN},
+  boxrule=1pt,
+  arc=4pt
+}
+
+% Section styling
+\titleformat{\section}
+{\color{secondary}\huge\bfseries}
+{\thesection}{1em}{}[\titlerule]
+
+\titleformat{\subsection}
+{\color{primary}\Large\bfseries}
+{\thesubsection}{1em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondary,
+    filecolor=magenta,
+    urlcolor=primary,
+}
+
+% --- TITLE PAGE ---
+\title{\textbf{\Huge MASTERCLASS: \\ ESMALTADO SEMIPERMANENTE PRO}}
+\author{\Large Tu Guía Definitiva hacia la Manicuría Perfecta}
+\date{}
+
+\begin{document}
+
+% --- COVER ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\color{secondary}\Huge \textbf{MASTERCLASS PRO}} \\
+    \vspace{0.5cm}
+    {\color{primary}\Huge \textbf{ESMALTADO SEMIPERMANENTE}} \\
+    \vspace{1.5cm}
+    
+    % Placeholder for Cover Image
+    \begin{figure}[htbp]
+      \centering
+      \framebox{\parbox{0.7\textwidth}{\centering
+        \vspace{4cm}
+        \huge \color{gray} \textbf{FOTO DE PORTADA} \\
+        \small \color{gray} (Uñas perfectas con acabado brillante)
+        \vspace{4cm}
+      }}
+    \end{figure}
+    
+    \vspace{1.5cm}
+    {\Large \textbf{Aprende, Practica y Monetiza tu Pasión}} \\
+    \vspace{0.5cm}
+    {\large Guía paso a paso para lograr resultados de salón en casa}
+    
+    \vfill
+    {\small \textbf{Edición Digital 2025}}
+\end{titlepage}
+
+% --- TABLE OF CONTENTS ---
+\tableofcontents
+\newpage
+
+% --- INTRO ---
+\section*{Bienvenida al Curso}
+\addcontentsline{toc}{section}{Bienvenida}
+
+¡Felicidades! Estás a punto de adentrarte en el rentable y creativo mundo del esmaltado semipermanente. Este curso no es solo teoría; es una hoja de ruta diseñada para llevarte desde cero hasta un nivel profesional.
+
+\subsection*{Objetivo Final del Alumno}
+Al finalizar este curso, serás capaz de realizar un servicio de esmaltado semipermanente que dure \textbf{más de 21 días}, sin levantamientos y cuidando la salud de la uña natural. Además, tendrás las herramientas básicas para cobrar por tu trabajo.
+
+\begin{protip}
+    El secreto no está en la marca del esmalte, sino en la \textbf{preparación de la uña natural}. Presta especial atención al Módulo 1.
+\end{protip}
+
+\newpage
+
+% --- MODULE 1 ---
+\section{Módulo 1: Anatomía y Preparación (La Base del Éxito)}
+
+Antes de pintar, debemos preparar el lienzo. El 90\% de los problemas de desprendimiento ocurren por una mala preparación.
+
+\subsection{1.1 Herramientas Necesarias}
+No necesitas comprar todo el catálogo, pero sí lo esencial:
+\begin{itemize}
+    \item Repujador de cutículas (acero inoxidable).
+    \item Lima 100/180 (para limar largo y abrir canales de adherencia).
+    \item Lima Buffer o bloque pulidor.
+    \item Cepillo para polvo (Bledo).
+    \item Alcohol al 70\% o Clarificador.
+    \item Wipes (toallitas sin pelusa).
+\end{itemize}
+
+% Placeholder for Tools Image
+\begin{figure}[htbp]
+  \centering
+  \framebox{\parbox{0.8\textwidth}{\centering
+    \vspace{2cm}
+    \textbf{Imagen: Kit de Herramientas Básicas} \\
+    \small\textit{Muestra organizada de limas, repujador y líquidos.}
+    \vspace{2cm}
+  }}
+\end{figure}
+
+\subsection{1.2 El Paso a Paso de la Preparación}
+\begin{enumerate}
+    \item \textbf{Sanitización:} Rocía alcohol en tus manos y las de la clienta.
+    \item \textbf{Repujado:} Empuja suavemente la cutícula hacia atrás para despegarla de la placa ungueal.
+    \item \textbf{Apertura de Canales:} Con la lima 180 (lado suave), lima suavemente la superficie de la uña en una sola dirección para quitar el brillo natural. \textbf{No presiones}, solo queremos quitar la grasa.
+    \item \textbf{Limpieza:} Retira el polvo cepillando hacia abajo y limpia con un wipe con alcohol.
+\end{enumerate}
+
+\begin{warningbox}
+    \textbf{ERROR COMÚN:} Tocar la uña con los dedos después de limpiarla con alcohol. Esto vuelve a depositar grasa y causará que el esmalte se levante.
+\end{warningbox}
+
+\newpage
+
+% --- MODULE 2 ---
+\section{Módulo 2: Química de Productos y Adherentes}
+
+Entender qué aplicas te diferencia de una aficionada.
+
+\subsection{2.1 El Orden Correcto de los Líquidos}
+\begin{itemize}
+    \item \textbf{Nail Prep / Deshidratador:} Elimina la humedad temporalmente. Fundamental en manos sudorosas.
+    \item \textbf{Primer (Con o Sin Ácido):} Funciona como una cinta doble faz. 
+    \begin{itemize}
+        \item \textit{Sin ácido:} Para la mayoría de las uñas.
+        \item \textit{Con ácido:} Solo para uñas muy grasas o problemáticas (usar con precaución).
+    \end{itemize}
+    \item \textbf{Base Coat:} La capa que protege la uña y adhiere el color.
+\end{itemize}
+
+\subsection{2.2 La Lámpara UV/LED}
+Para asegurar un curado correcto, necesitas una lámpara de al menos \textbf{48 Watts}. 
+\begin{itemize}
+    \item Tiempo de curado estándar: 30 a 60 segundos.
+    \item Colores muy oscuros (negro, rojo): 60 segundos.
+\end{itemize}
+
+\newpage
+
+% --- MODULE 3 ---
+\section{Módulo 3: Aplicación Perfecta y Esmaltado}
+
+Aquí es donde ocurre la magia. La técnica lo es todo.
+
+\subsection{3.1 Técnica de Capas Finas}
+El error número uno es aplicar capas gruesas. Esto causa que el esmalte se arrugue en la lámpara.
+
+\textbf{El Proceso:}
+\begin{enumerate}
+    \item Aplica una capa fina de \textbf{Base Coat}. Cura 60 seg.
+    \item Aplica la \textbf{1ra capa de Color}. Debe ser casi transparente. No te preocupes si queda veteado. Cura 60 seg.
+    \item Aplica la \textbf{2da capa de Color}. Aquí logras la cobertura total. Cura 60 seg.
+    \item Aplica el \textbf{Top Coat} para dar brillo y sellar. Cura 60 seg.
+\end{enumerate}
+
+\subsection{3.2 Zona de Cutícula y Sellado}
+Para que parezca profesional, el esmalte debe llegar \textit{cerca} de la cutícula pero \textbf{nunca tocarla}.
+\begin{itemize}
+    \item Usa un pincel liner (fino) para acercarte a los bordes.
+    \item \textbf{Sellado del Borde Libre:} Pasa el pincel por la punta de la uña en cada capa. Esto evita que se descascare.
+\end{itemize}
+
+% Placeholder for Application Image
+\begin{figure}[htbp]
+  \centering
+  \framebox{\parbox{0.8\textwidth}{\centering
+    \vspace{2.5cm}
+    \textbf{Imagen: Técnica de Sellado} \\
+    \small\textit{Primer plano mostrando cómo pasar el pincel por la punta.}
+    \vspace{2.5cm}
+  }}
+\end{figure}
+
+\newpage
+
+% --- MODULE 4 ---
+\section{Módulo 4: Retirado Seguro (Salud de la Uña)}
+
+Un buen servicio termina cuando la clienta vuelve a retirarse el producto.
+
+\subsection{4.1 Método de Remover (Soak Off)}
+\begin{enumerate}
+    \item Lima el brillo del Top Coat con una lima 100/180.
+    \item Empapa un algodón en Acetona Pura (Remover UV).
+    \item Coloca el algodón sobre la uña y envuelve con papel aluminio o capsulas.
+    \item Espera 10-15 minutos.
+    \item Retira y empuja suavemente el producto levantado. Si no sale, envuelve 5 min más. \textbf{Nunca arranques el esmalte a la fuerza.}
+\end{enumerate}
+
+\begin{protip}
+    Ofrecer un retirado gratuito o a bajo costo si se vuelven a esmaltar contigo fideliza a la clienta y protege sus uñas de arrancarse el producto en casa.
+\end{protip}
+
+\newpage
+
+% --- MODULE 5 ---
+\section{Módulo 5: Negocio y Marketing (Vende tu Servicio)}
+
+De nada sirve ser la mejor si nadie lo sabe.
+
+\subsection{5.1 Cómo calcular tu precio}
+No cobres "lo que cobra la vecina". Suma:
+$$ (Costo Materiales por servicio) + (Tu hora de trabajo) + (Gastos fijos: Luz/Local) + Ganancia $$
+
+\subsection{5.2 Fotografía para Instagram}
+Tus fotos son tu vitrina.
+\begin{itemize}
+    \item Limpia la piel de aceite antes de la foto.
+    \item Usa luz natural o un aro de luz.
+    \item Cuida el fondo (usa una tela lisa o textura suave).
+    \item La pose de la mano debe verse relajada, no "garra".
+\end{itemize}
+
+% Placeholder for Marketing Image
+\begin{figure}[htbp]
+  \centering
+  \framebox{\parbox{0.8\textwidth}{\centering
+    \vspace{2cm}
+    \textbf{Imagen: Ejemplo de Foto para Instagram} \\
+    \small\textit{Mano relajada con buena iluminación y fondo limpio.}
+    \vspace{2cm}
+  }}
+\end{figure}
+
+\newpage
+
+% --- BONUS ---
+\section*{BONUS EXCLUSIVO: Guía de Solución de Problemas}
+\addcontentsline{toc}{section}{BONUS: Solución de Problemas}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{0.4\textwidth}|p{0.5\textwidth}|}
+\hline
+\rowcolor{lightbg} \textbf{Problema} & \textbf{Solución Probable} \\
+\hline
+El esmalte se levanta a los 2 días & Mala preparación (quedó grasa) o tocaste cutícula con el producto. \\
+\hline
+El esmalte se arruga & Capas demasiado gruesas o lámpara con poca potencia. \\
+\hline
+Se sale la punta & No sellaste el borde libre en todas las capas. \\
+\hline
+La uña duele en lámpara & Capa de base muy gruesa o uña muy limada (sensible). Saca la mano y vuelve a meterla despacio. \\
+\hline
+\end{tabular}
+\end{table}
+
+\vspace{2cm}
+
+\begin{center}
+    {\Huge \textbf{¡Manos a la obra!}} \\
+    \vspace{0.5cm}
+    La práctica hace al maestro. Empieza hoy mismo.
+\end{center}
+
+\end{document}
